@@ -153,7 +153,6 @@ func main() {
 	}
 	makeGuardSleepMap()
 
-	duration := time.Since(startTime)
 	sleepyGuardId := findBiggestSleepyHead()
 	sleepiestMinute, _ := findGuardsSleepiestMinute(sleepyGuardId)
 	resGuardIdInt, _ := strconv.ParseInt(sleepyGuardId, 10, 32)
@@ -167,5 +166,6 @@ func main() {
 	resultPart2 := sleepiestMinuteGuard * sleepiestMinuteOverall
 	fmt.Printf("\n\nPart 2 result: %d", resultPart2)
 
+	duration := time.Since(startTime)
 	fmt.Println("\n\nScript took ", duration)
 }
