@@ -89,3 +89,13 @@ func PopFromIntSlice(slice []int, index int) (resSlice []int, res int, actualInd
 	slice = slice[:len(slice) - 1]
 	return slice, val, index
 }
+
+
+func StringSliceContains(slice []string, item string) bool {
+	for _, value := range slice {
+		if value == item {
+			return true
+		}
+	}
+	return false
+}
