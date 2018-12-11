@@ -9,12 +9,12 @@ import (
 	"time"
 )
 
-var marbleCircle = []int{0, 2, 1}
-var currentMarbleValue int = 2
-var currentMarbleIndex int = 1
-var turnsMade int = 2
+var marbleCircle = []int{0}
+var currentMarbleValue int = 0
+var currentMarbleIndex int = 0
+var turnsMade int = 0
 var playerCount int = 9
-var lastPlayerNum int = 2
+var lastPlayerNum int = 0
 var lastMarbleValue int = 0
 var playerScoreMap = map[int]int{}
 
