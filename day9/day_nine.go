@@ -35,7 +35,7 @@ func makeScoreTurn() bool {
 		currentMarbleIndex = len(marbleCircle) + currentMarbleIndex
 	}
 	marbleCircle, scoreExtra, _ = advent_of_code.PopFromIntSlice(marbleCircle, currentMarbleIndex)
-	playerScoreMap[lastPlayerNum] += (score + scoreExtra)
+	playerScoreMap[lastPlayerNum] += score + scoreExtra
 	bumpLastPlayerNum()
 	if currentMarbleValue < lastMarbleValue	{
 		return true
